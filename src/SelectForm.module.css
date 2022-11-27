@@ -1,0 +1,53 @@
+.order {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    margin: -150px 0 0 -200px;
+    background-color: #413e3e;
+    /* border: 3px solid #af54b3; */
+    border-radius: 30px;
+    width: 400px;
+    height: 300px;
+}
+
+.choseCity {
+    margin: 0 0 10px 0;
+    text-align: center;
+    color: #d5d0d6;
+    font-size: xx-large;
+}
+
+.button {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 90px;
+    height: 30px;
+    margin: 5px 0 0 -45px;
+    background-color: #d8cece;
+    border: none;
+    border-radius: 10px;
+    color: #413e3e;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 1px solid #af54b3;
+}
+
+.orderResult {
+    width: 380px;
+    height: 200px;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    margin: -100px 0 0 -190px;
+}
+
+.reactSelectContainer {
+    width: 90%;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    /* cursor: pointer; */
+}

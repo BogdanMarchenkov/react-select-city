@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Order from './Order';
+import SelectForm from './SelectForm';
 
-function App() {
+const App = () => {
+
+  const cityOptions = [
+    {
+      value: "Київ",
+      label: "Київ"
+    },
+    {
+      value: "Львів",
+      label: "Львів"
+    },
+    {
+      value: "Дніпро",
+      label: "Дніпро"
+    },
+    {
+      value: "Одеса",
+      label: "Одеса"
+    }
+  ]
+
+  const [currentCity, setCurrentCity] = useState("")
+
+  if (currentCity === null) return (setCurrentCity({ value: "", label: "" }))
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Routes>
+          <Route path='' element={<SelectForm setCurrentCity={setCurrentCity} cityOptions={cityOptions} city={currentCity.value} />} />
+          <Route path='/order' element={<Order city={currentCity.value} />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

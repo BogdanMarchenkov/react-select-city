@@ -1,0 +1,52 @@
+.input__control {
+  background-color: #d8cece !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+}
+
+.input__control:hover {
+  border: 1px solid #af54b3 !important;
+  border-color: #af54b3 !important;
+  box-shadow: #af54b3 !important;
+}
+
+.input__control--is-focused {
+  border: 1px solid #af54b3 !important;
+  border-color: #af54b3 !important;
+  box-shadow: #af54b3 !important;
+}
+
+.input__indicator-separator {
+  width: 0 !important;
+}
+
+.input__clear-indicator {
+  cursor: pointer !important;
+  padding: 0px !important;
+}
+
+.input__dropdown-indicator {
+  cursor: pointer !important;
+  padding-right: 8px !important;
+} 
+
+.input__menu {
+  /* background-color: #838282 !important; */
+  background-color: #686767 !important;
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  box-shadow: #af54b3 !important; 
+}
+
+.input__option {
+  cursor: pointer !important;
+  border-radius: 5px !important;
+}
+
+.input__option--is-selected {
+  background-color: #686767 !important;
+}
+
+.input__option--is-focused {
+  background-color: #d8cece !important;
+}
